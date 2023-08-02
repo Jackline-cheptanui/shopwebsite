@@ -1,0 +1,213 @@
+* {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+* button, * a, * input {
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.wrapper {
+  width: 80%;
+  height: inherit;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+}
+.wrapper .left-container {
+  width: 100%;
+  padding: 1rem 0.2rem;
+  overflow-y: scroll;
+  height: 80vh;
+}
+.wrapper .left-container::-webkit-scrollbar {
+  display: none;
+}
+.wrapper .left-container .card {
+  width: 90%;
+  padding: 0.2rem 0.6rem;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem auto;
+  border-radius: 3px;
+}
+.wrapper .left-container .card .image {
+  width: 140px;
+  height: 100px;
+}
+.wrapper .left-container .card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .left-container .card .right {
+  padding-left: 1rem;
+}
+.wrapper .left-container .card .right .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .left-container .card .right .top button {
+  color: white;
+  background: orange;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+}
+.wrapper .left-container .card .right .mid {
+  padding: 0.2rem 0.1rem;
+}
+.wrapper .left-container .card .right .mid p {
+  line-height: 1.5rem;
+  font-size: 0.95rem;
+}
+.wrapper .left-container .card .right .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .left-container .card .right .footer p i {
+  color: orange;
+}
+.wrapper .positons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  margin: 1rem auto;
+  padding: 1rem;
+  margin-left: 1rem;
+  width: 300px;
+}
+.wrapper .positons p {
+  width: 60px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  background: orange;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-left: 1rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.wrapper .right-container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 1rem 0.2rem;
+}
+.wrapper .right-container .search {
+  width: 60%;
+  padding: 0.6rem 0.8rem;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 1rem auto;
+  border-radius: 3px;
+}
+.wrapper .right-container .search h1 {
+  position: relative;
+}
+.wrapper .right-container .search h1::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  color: orange;
+  background-color: orange;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+}
+.wrapper .right-container .search span {
+  background: rgb(227, 224, 224);
+  display: flex;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.wrapper .right-container .search span input {
+  height: 100%;
+}
+.wrapper .right-container .search span i {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: orange;
+}
+.wrapper .right-container .search .top {
+  margin-top: 0.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 1px solid orange;
+  color: orange;
+}
+.wrapper .right-container .search .top div i {
+  font-size: 0.6rem;
+}
+.wrapper .right-container .search .top p {
+  font-size: 0.6rem;
+}
+.wrapper .right-container .search .tags {
+  width: 100%;
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 1px solid grey;
+}
+.wrapper .right-container .search .tags p {
+  font-size: 0.6rem;
+}
+.wrapper .right-container .search .bottom {
+  margin-top: 0.2rem;
+}
+.wrapper .right-container .search .bottom button {
+  padding: 0.2rem 0.6rem;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.wrapper .right-container .search .bottom p {
+  color: white;
+}
+.wrapper .right-container .search .buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+.wrapper .right-container .search .buttons .btn {
+  padding: 0.2rem 0.6rem;
+  outline: 1px solid rgb(211, 210, 210);
+  font-size: 0.7rem;
+}
+.wrapper .right-container .search .buttons .btn:nth-child(1) {
+  background: orange;
+  color: black;
+}/*# sourceMappingURL=index.css.map */
